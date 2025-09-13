@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archana Kolekar — Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0f766e;--muted:#6b7280;--bg:#fbfbfc;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;margin:0;background:var(--bg);color:#111}
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .name{font-size:20px;font-weight:700}
+    .contact{font-size:14px;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:28px}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .tag{color:var(--accent);font-weight:600;font-size:13px}
+    p.lead{margin:12px 0;color:#0f172a}
+    .cta{display:flex;gap:8px;margin-top:12px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(15,118,110,0.12)}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:18px}
+    .proj-title{font-weight:600;margin:0 0 6px}
+    .meta{font-size:13px;color:var(--muted)}
+    .skills-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:#f1f5f9;padding:8px 10px;border-radius:8px;font-size:13px;color:#0f172a}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+    @media (max-width:880px){.hero{grid-template-columns:1fr} .two-col{grid-template-columns:1fr}}
+    .preview{width:100%;height:140px;background:linear-gradient(90deg,#eef2ff,#fff);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+    .section-title{font-weight:700;margin-bottom:10px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <div class="name">ARCHANA KOLEKAR</div>
+        <div class="contact">248-429-9305 • archanadevkate@oakland.edu • linkedin.com/in/archana-kolekar-9a7583208</div>
+      </div>
+      <div style="text-align:right">
+        <div class="tag">Data Analyst · BI Engineer · Data Science</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:6px">Oakland University — M.S. Computer Science (2025)</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <div class="section-title">Professional Summary</div>
+        <p class="lead">With over two years of experience in analytics, BI engineering, and data science, I design scalable data pipelines, build interactive dashboards, and deliver predictive models that convert data into business value. Tools I use: Power BI, SQL, Azure/AWS, Python.</p>
+
+        <div style="margin-top:18px">
+          <div class="section-title">Selected Projects</div>
+          <div class="projects">
+            <div class="card" style="padding:12px">
+              <div class="proj-title">Sales Forecasting & Analysis Dashboard</div>
+              <div class="meta">Power BI • SQL • Python — Jan 2024 – Apr 2024</div>
+              <div class="preview" style="margin-top:10px">Screenshot / GIF</div>
+              <p style="margin:8px 0 0;font-size:14px;color:#0f172a">Automated data ingestion and forecasting visualizations; increased decision-making efficiency by ~20%.</p>
+              <div style="margin-top:8px"><a class="btn" href="#">GitHub</a> <a class="btn secondary" href="#">Live Dashboard</a></div>
+            </div>
+
+            <div class="card" style="padding:12px">
+              <div class="proj-title">Access Control Threat Detection</div>
+              <div class="meta">Python • Splunk • SQL — Sept 2024 – Dec 2024</div>
+              <div class="preview" style="margin-top:10px">Splunk / Alerts Preview</div>
+              <p style="margin:8px 0 0;font-size:14px;color:#0f172a">Built anomaly detection for access activity with real-time alerting and compliance reporting.</p>
+              <div style="margin-top:8px"><a class="btn" href="#">GitHub</a> <a class="btn secondary" href="#">Write-up</a></div>
+            </div>
+
+            <div class="card" style="padding:12px">
+              <div class="proj-title">Traveling Salesman Optimization</div>
+              <div class="meta">Python • TSPLIB — Jan 2023 – Apr 2023</div>
+              <div class="preview" style="margin-top:10px">Algorithm Performance Chart</div>
+              <p style="margin:8px 0 0;font-size:14px;color:#0f172a">Applied genetic algorithms to optimize routing; analyzed tradeoffs between operators.</p>
+              <div style="margin-top:8px"><a class="btn" href="#">GitHub</a> <a class="btn secondary" href="#">Report</a></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <div class="section-title">Quick Links</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <a class="btn" href="#">Download Resume (PDF)</a>
+          <a class="btn secondary" href="#">LinkedIn Profile</a>
+          <a class="btn secondary" href="#">GitHub</a>
+        </div>
+
+        <div style="margin-top:18px">
+          <div class="section-title">Skills</div>
+          <div class="skills-grid">
+            <div class="skill">Power BI</div>
+            <div class="skill">SQL / MySQL</div>
+            <div class="skill">Python (pandas, sklearn)</div>
+            <div class="skill">Splunk / SIEM</div>
+            <div class="skill">AWS</div>
+            <div class="skill">ETL Pipelines</div>
+            <div class="skill">Tableau</div>
+            <div class="skill">Excel (Advanced)</div>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <div class="section-title">Certifications</div>
+          <div class="meta">AWS Solutions Architect – Associate</div>
+          <div class="meta" style="margin-top:6px">Power BI Data Analyst (in progress)</div>
+        </div>
+
+        <div style="margin-top:18px">
+          <div class="section-title">Contact</div>
+          <div class="meta">archanadevkate@oakland.edu</div>
+          <div class="meta">Rochester Hills, MI</div>
+        </div>
+      </aside>
+    </section>
+
+    <section style="margin-top:22px" class="card">
+      <div class="two-col">
+        <div>
+          <div class="section-title">Experience</div>
+          <div style="margin-bottom:10px">
+            <strong>Research Assistant — Cybersecurity & Data Analytics</strong>
+            <div class="meta">Oakland University (Remote) — Feb 2025 – Apr 2025</div>
+            <ul style="margin:8px 0 0 18px">
+              <li>Researched ML-driven anomaly detection for access control systems.</li>
+              <li>Contributed to publications on BSA/AML threat modeling.</li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom:10px">
+            <strong>Freelance Data Scientist & Developer</strong>
+            <div class="meta">Remote — Jan 2024 – Apr 2024</div>
+            <ul style="margin:8px 0 0 18px">
+              <li>Built ETL pipelines and integrated Splunk with predictive dashboards.</li>
+              <li>Deployed models to monitor compliance and alerting workflows.</li>
+            </ul>
+          </div>
+
+          <div>
+            <strong>Accountant & Finance Analyst</strong>
+            <div class="meta">Meril Life Sciences, Brazil — 2015 – Dec 2016</div>
+            <ul style="margin:8px 0 0 18px">
+              <li>Designed SQL-based revenue dashboards and forecasting models.</li>
+              <li>Improved budget planning accuracy by 25%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-title">Education</div>
+          <div style="margin-bottom:10px">
+            <strong>Master of Science — Computer Science</strong>
+            <div class="meta">Oakland University, MI — Sept 2023 – Apr 2025 | GPA: 3.88/4.0</div>
+            <div style="margin-top:8px" class="meta">Relevant: Machine Learning, Data Analytics, Secure Systems, Cloud Computing</div>
+          </div>
+
+          <div>
+            <strong>Bachelor of Commerce — Banking & Finance</strong>
+            <div class="meta">University of Pune, India — June 2010 – Oct 2013</div>
+          </div>
+
+          <div style="margin-top:16px">
+            <div class="section-title">Languages</div>
+            <div class="meta">English • Hindi • Marathi</div>
+          </div>
+
+          <div style="margin-top:12px">
+            <div class="section-title">Hobbies</div>
+            <div class="meta">Sustainable Farming • Gardening • STEM Volunteering • Cooking</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Built by Archana Kolekar • <span style="color:var(--muted)">Keep this page updated — it’s your living portfolio.</span>
+    </footer>
+  </div>
+</body>
+</html>
